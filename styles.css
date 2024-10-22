@@ -1,0 +1,128 @@
+:root {
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+
+    --Brown800: hsl(14, 45%, 36%);
+
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+/* Estilos base */
+html{
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 1.6; /* Ajusta el interlineado. Puedes cambiar el valor para hacerlo más grande o más pequeño */
+}
+
+/* Estilos CSS */
+body {
+    background-color: var(--Stone100);
+    
+    color: var(--Stone900);
+    border-radius: 10%;
+    padding: 2rem;
+}
+
+article {
+  max-width: 1000px;
+    background-color: white;
+    padding: 3rem;
+    
+    margin-inline: auto;
+    border-radius: 1rem;
+}
+
+figure{
+    border-radius: 1rem;
+    overflow: clip;
+}
+
+#Preparation {
+    background-color: var(--Rose50);
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
+
+
+h1 {
+    color: hsl(24, 5%, 18%);
+    font-family: "Young Serif", serif;
+}
+
+h2 {
+    color: var(--Brown800);
+    font-family: "Young Serif", serif;
+}
+
+h4 {
+    color: var(--Rose800);
+    font-size: larger;
+}
+
+p {
+    color: black;
+    line-height: 1.6; /* Ajusta el interlineado. Puedes cambiar el valor para hacerlo más grande o más pequeño */
+}
+
+ol {
+    list-style-position:outside; /* Asegura que el marcador (número) esté fuera del li */
+    padding-left: 2rem; /* Espacio para el número */  
+    line-height: 1.6; /* Ajusta el interlineado. Puedes cambiar el valor para hacerlo más grande o más pequeño */
+}
+  
+  ol li {
+    position: relative; /* Establece un contexto para posicionar los números */
+    margin-bottom: 1rem;
+    padding-left: 1prem; /* Espacio para el número */
+    color: var(--Stone900); /* Color del texto del ítem */
+  }
+  
+  
+  
+  ol li::marker {
+    color: var(--Brown800); /* Color de los números */
+    font-weight: bold; /* Opcional: hacer los números en negrita */
+    
+  }
+
+  ul {
+    list-style-position:outside; /* Asegura que el marcador (número) esté fuera del li */
+    padding-left: 2rem; /* Espacio para el número */  
+    
+}
+  
+  ul li {
+    position: relative; /* Establece un contexto para posicionar los números */
+    margin-bottom: 1rem;
+    padding-left: 1rem; /* Espacio para el número */
+    color: var(--Stone900); /* Color del texto del ítem */
+  }
+  
+  
+  
+  ul li::marker {
+    color: var(--Brown800); /* Color de los números */
+    font-weight: bold; /* Opcional: hacer los números en negrita */
+    
+  }
+
+  table {
+    
+    border-spacing: 1rem 0.5rem; /* Espacio horizontal de 15px y vertical de 5px */
+  }
+
+  table tr th{
+    position:absolute; /* Establece un contexto para posicionar los números */
+    color: var(--Brown800); /* Color del texto del ítem */
+  }
